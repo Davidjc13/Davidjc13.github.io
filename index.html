@@ -1,12 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-</head>
-<body>
-    <h1>Hello! I am David</h1>
-    <p>AI Developer</p>
-</body>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Portafolio — David</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="description" content="Portafolio personal — proyectos, habilidades y contacto">
+    </head>
+    <body>
+        <header class="top">
+            <div class="brand">
+                <div class="logo">D</div>
+                <div>
+                    <h1>David</h1>
+                    <p class="tag">Curioso / Desarrollador / Diseñador</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#about">Sobre mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-left">
+                      <h2>Hola, soy <span class="accent">David</span></h2>
+                      <p class="lead">Desarrollador especializado en Inteligencia Artificial: modelos, infra y productos de ML con impacto real.</p>
+                    <p class="cta-row">
+                        <a class="btn" href="#projects">Ver proyectos</a>
+                        <a class="btn ghost" href="mailto:tu@email.com">Escríbeme</a>
+                    </p>
+                </div>
+                <div class="hero-right">
+                    <div class="portrait">
+                        <!-- SVG placeholder humanoide -->
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g" x1="0" x2="1">
+                                    <stop offset="0" stop-color="#ff8a00"/>
+                                    <stop offset="1" stop-color="#e52e71"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="200" height="200" rx="24" fill="#0f1724" />
+                            <g transform="translate(40,30)">
+                                <circle cx="60" cy="40" r="28" fill="url(#g)" opacity="0.95" />
+                                <rect x="30" y="80" width="60" height="60" rx="18" fill="#111827" stroke="#222" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="card">
+                <h3>Sobre mí</h3>
+                <p>Soy un ingeniero de IA que diseña y despliega modelos en producción. Me centro en NLP, visión por computadora y sistemas que conectan modelos con productos útiles.</p>
+                <ul class="skills">
+                    <li>Modelado ML & evaluación</li>
+                    <li>Producción: Docker, Kubernetes, CI/CD</li>
+                    <li>Experimentación y ML Ops</li>
+                </ul>
+            </section>
+
+            <section id="projects" class="card">
+                <h3>Proyectos</h3>
+                <div class="grid">
+                    <article class="project">
+                        <h4>Pipeline de NLP en producción</h4>
+                        <p>Despliegue de un modelo de clasificación y un endpoint con baja latencia, monitorizado con métricas y tests A/B.</p>
+                        <p class="meta">Python • PyTorch • FastAPI • Docker</p>
+                    </article>
+                    <article class="project">
+                        <h4>Search semántico con embeddings</h4>
+                        <p>Motor de búsqueda semántica usando embeddings y vector DB para búsqueda mejorada de documentos.</p>
+                        <p class="meta">Hugging Face • FAISS • MLOps</p>
+                    </article>
+                    <article class="project">
+                        <h4>Prototype de Generación</h4>
+                        <p>Prototipo que combina generación de texto con pipeline de post-procesado y evaluación humana.</p>
+                        <p class="meta">Transformers • Evaluación • UX</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="tech" class="card">
+                <h3>Tecnologías</h3>
+                <div class="tech-grid">
+                    <div class="tech-badge">Python</div>
+                    <div class="tech-badge">PyTorch</div>
+                    <div class="tech-badge">TensorFlow</div>
+                    <div class="tech-badge">Hugging Face</div>
+                    <div class="tech-badge">OpenAI</div>
+                    <div class="tech-badge">FAISS / Weaviate</div>
+                    <div class="tech-badge">Docker</div>
+                    <div class="tech-badge">Kubernetes</div>
+                    <div class="tech-badge">FastAPI</div>
+                    <div class="tech-badge">GitHub Actions</div>
+                </div>
+            </section>
+
+            <section id="experience" class="card">
+                <h3>Experiencia</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <strong>Ingeniero de ML — Empresa X</strong>
+                        <span class="meta">2023 — Presente</span>
+                        <p>Diseño y despliegue de modelos de NLP, integración con productos y mejora de pipelines de inferencia.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <strong>Investigador ML — Proyecto Y</strong>
+                        <span class="meta">2021 — 2023</span>
+                        <p>Experimentación con arquitecturas y evaluación rigurosa en datasets reales.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="studies" class="card">
+                <h3>Estudios</h3>
+                <div class="studies-list">
+                    <div class="study-item">
+                        <strong>Máster en Aprendizaje Automático</strong>
+                        <span class="meta">Universidad Z — 2020 — 2022</span>
+                        <p>Profundización en técnicas de NLP, visión por computadora y aprendizaje profundo.</p>
+                    </div>
+                    <div class="study-item">
+                        <strong>Grado en Ingeniería Informática</strong>
+                        <span class="meta">Universidad Y — 2016 — 2020</span>
+                        <p>Fundamentos de algoritmos, sistemas distribuidos y desarrollo de software.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="card contact">
+                <h3>Contacto</h3>
+                <p>¿Quieres colaborar o simplemente saludar? Mándame un correo o usa las redes.</p>
+                <div class="contact-row">
+                    <a class="btn" href="mailto:tu@email.com">Enviar correo</a>
+                    <a class="btn ghost" id="cv-link" href="assets/CV.pdf" download>Descargar CV</a>
+                </div>
+
+                <div class="links-row">
+                    <a class="social-link" href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
+                    <a class="social-link" href="https://www.linkedin.com/in/tu-usuario/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" name="name" required />
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required />
+                    </label>
+                    <label>
+                        <span>Mensaje</span>
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <button class="btn" type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Hecho con curiosidad · © <span id="year"></span> David</p>
+        </footer>
+
+        <div id="cursor"></div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
