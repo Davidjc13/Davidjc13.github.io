@@ -19,6 +19,30 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const range = document.getElementById('avatar-size');
+  if (!range) return;
+  const key = 'avatarSize';
+  const root = document.documentElement;
+  const stored = localStorage.getItem(key);
+
+  if (stored) {
+    root.style.setProperty('--avatar-size', stored + 'px');
+    range.value = stored;
+  } else {
+    const computed = parseInt(getComputedStyle(root).getPropertyValue('--avatar-size')) || 84;
+    range.value = computed;
+  }
+
+  range.addEventListener('input', function (e) {
+    root.style.setProperty('--avatar-size', e.target.value + 'px');
+  });
+
+  range.addEventListener('change', function (e) {
+    localStorage.setItem(key, e.target.value);
+  });
+});
+
   // easter egg: click logo to toggle theme-ish effect
   const logo = document.querySelector('.logo');
   if(logo){
