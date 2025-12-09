@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Company logo">
+  <rect width="128" height="128" rx="16" fill="#0f1724" />
+  <g fill="#e52e71">
+    <rect x="20" y="36" width="88" height="12" rx="3" />
+    <rect x="20" y="62" width="88" height="12" rx="3" />
+  </g>
+</svg>

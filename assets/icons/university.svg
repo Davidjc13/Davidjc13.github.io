@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="University logo">
+  <rect width="128" height="128" rx="16" fill="#0f1724" />
+  <g fill="#ff8a00">
+    <path d="M64 28 L20 52 L64 76 L108 52 Z" />
+    <rect x="46" y="76" width="36" height="28" rx="4" />
+  </g>
+</svg>
