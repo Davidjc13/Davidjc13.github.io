@@ -295,12 +295,6 @@ h3 {
   color: var(--text-main);
 }
 
-.item-body strong {
-  display: block;
-  font-size: 1.1rem;
-  color: var(--text-main);
-}
-
 .meta {
   font-size: 0.85rem;
   color: var(--muted);
